@@ -7,6 +7,7 @@ import { UsersModule } from './User/user.module';
 import { SuccessIndicatorModule } from './SuccessIndicator/successIndicator.module';
 import { dataBaseConfig } from 'config/database';
 import { DataSource } from 'typeorm';
+import { IndividualPerformanceCommitmentReviewModule } from './ipcr/ipcr.module';
 // import { AppDataSource } from 'config/dataSource';
 
 @Module({
@@ -22,6 +23,7 @@ import { DataSource } from 'typeorm';
     }),
     UsersModule,
     SuccessIndicatorModule,
+    IndividualPerformanceCommitmentReviewModule,
   ],
   controllers: [AppController],
   providers: [AppService],

@@ -22,7 +22,7 @@
     "migration:show": "npm run typeorm migration:show -- -d ./config/dataSource.ts",
     "migration:run": "npm run typeorm migration:run -- -d ./config/dataSource.ts",
     "migration:revert": "npm run typeorm migration:revert -- -d ./config/dataSource.ts",
-    "migration:generate": "npm run typeorm migration:generate -- ./db/migrations/ -d ./config/dataSource.ts",
+    "migration:generate": "npm run typeorm migration:generate -- -d ./config/dataSource.ts ./db/migrations/$npm_config_name",
     "migration:create": "npm run typeorm migration:create ./db/migrations/$npm_config_name"
   },
   "dependencies": {
